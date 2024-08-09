@@ -9,23 +9,11 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>xyz.gdom</groupId>
-    <artifactId>FakeMessages</artifactId>
+    <artifactId>FakeDataGenerator</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>FakeMessages</name>
-    <description>FakeMessages</description>
-    <url/>
-    <licenses>
-        <license/>
-    </licenses>
-    <developers>
-        <developer/>
-    </developers>
-    <scm>
-        <connection/>
-        <developerConnection/>
-        <tag/>
-        <url/>
-    </scm>
+    <name>FakeDataGenerator</name>
+    <description>Generates fake data for testing</description>
+
     <properties>
         <java.version>22</java.version>
     </properties>
@@ -34,10 +22,12 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-amqp</artifactId>
         </dependency>
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.boot</groupId>-->
-<!--            <artifactId>spring-boot-starter-web</artifactId>-->
-<!--        </dependency>-->
+
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-starter-webflux-ui</artifactId>
+            <version>2.5.0</version>
+        </dependency>
 
         <dependency>
             <groupId>net.datafaker</groupId>

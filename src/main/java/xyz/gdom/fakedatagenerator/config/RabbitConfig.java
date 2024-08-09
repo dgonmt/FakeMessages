@@ -1,4 +1,4 @@
-package xyz.gdom.fakemessages.config;
+package xyz.gdom.fakedatagenerator.config;
 
 import lombok.Setter;
 
@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Setter
 @Configuration
-public class RabbitConfiguration {
+public class RabbitConfig {
 
     @Value("${queue.name}")
     private String queueName;
